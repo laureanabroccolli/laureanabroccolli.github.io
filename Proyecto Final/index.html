@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="Curriculum Vitae">
+    <meta property="og:description" content="Vickie Ford - Marketing Digital">
+    <meta property="og:image" content="https://randomuser.me/api/portraits/women/76.jpg">
+    <script src="https://kit.fontawesome.com/031b45b7ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+   
+    <link rel="icon-briefcase" sizes="180x180" href="./imgenes/icon-briefcase.png">
+    <link rel="icon-briefcase1" type="imagenes/png" sizes="32x32" href="./imgenes/icon-briefcase1.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <header>
+        <figure id="foto-de-perfil">
+            <img id="foto-de-perfil-img" src="https://randomuser.me/api/portraits/women/76.jpg" alt="foto de perfil">
+        </figure>
+        <div id="titulos">
+            <h1>Vickie Ford</h1>
+            <h2>Marketing Digital</h2>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul id="datos-personales">
+                <li><button onclick='mostrar_info("direccion-correo","icono-email")' type="button" id="titulo-correo">
+                    E-mail
+                    <i id="icono-email" class="fa-solid fa-plus"></i>
+                </button> 
+                    <ul >
+                        <li><a id="direccion-correo" style="display: none;" href="mailto:vickie.ford@example.com" target="_blank">vickie.ford@example.com</a></li>
+                    </ul>
+                </li>
+                <li><button onclick='mostrar_info("fecha-nacimiento", "icono-nacimiento")' type="button" id="titulo-nacimiento">
+                    Nacimiento
+                    <i id="icono-nacimiento" class="fa-solid fa-plus"></i>
+                </button>
+                    <ul>
+                        <li><time id="fecha-nacimiento" style="display: none;" datetime="1986-01-11">11/1/1986</time></li>
+                    </ul>
+                </li>
+                <li><button onclick='mostrar_info("direccion", "icono-direccion")' type="button" id="titulo-direccion">
+                    Dirección
+                    <i id="icono-direccion" class="fa-solid fa-plus"></i> 
+                    </button>
+                    <ul>
+                        <li>
+                            <a id="direccion" style="display: none;" target="_blank" href="">9035 Hamilton Ave</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><button onclick='mostrar_info("telefono","icono-telefono")' type="button" id="titulo-telefono">
+                    Teléfono
+                    <i id="icono-telefono" class="fa-solid fa-plus"></i>
+                </button>
+                    <ul >
+                        <li><a id="telefono" style="display: none;" href="tel:(789) 817-1700">(789) 817-1700</a> </li>
+                    </ul>
+                </li> 
+            </ul>
+        </aside>
+        <div id="seccion-principal">
+            <section id="experiencia">
+                <h3>Experiencia</h3>
+                <h4>Marketing Digital (2020-Actualidad) | Marina Lerrea</h4>
+                <ul>
+                    <li>Gestóon integral de las redes sociales (Facebook e Instagram) de una de las webs referentes en el sector de cocinas de diseño.</li>
+                    <li>Principal Logro: conseguí más de 20.000 seguidores reales en Facebook en los primeros 3 meses de actividad Online.</li>
+                </ul>
+                <h4>Editora y SEO (2016-2020) | FlexiFitGlobal</h4>
+                <ul>
+                    <li>Definicion de la estrategia SEO de un blog de fitness con mas de 150.000 páginas vistas al mes.</li>
+                    <li>Optimización de todo el contenido web para SEO.</li>
+                    <li>Principal logro: Mas de 900 KWs posicionadas en el TOP 10 de Google.</li>
+                </ul>
+                <h4>Redactora y diseñadora creativa y audiovisual de Social Media | (2011-2016)</h4>
+                <ul>
+                    <li>Gestión y elaboración de contenido para redes sociales.</li>
+                    <li>Análisis de actividades y reporting.</li>
+                    <li>Redactora de contenidos para el blog.</li>
+                    <li>Principal logro: mas de 10.000 visualizaciones al mes en stories de Instagram.</li>
+                </ul>
+                
+                
+            </section>
+            <section id="educacion">
+                <h3>Educación</h3>
+                
+                <h4>Master en Marketing Digital | 2012</h4>
+                <ul>
+                    <li>Escuela de Negocios ESIC</li>
+                </ul>
+
+                <h4>Administracion y dirección de empresas | 2009</h4>
+                <ul>
+                    <li>Universidad Europea de Madrid</li>
+                </ul>
+              
+            </section>
+            <section id="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Soy experta en Illustrator y Photoshop.</li>
+                    <li>Tengo una sólido conocimiento en wordpress.</li>
+                    <li>Tengo habilidades y experiencia en SEO, SIM y Email Marketing.</li>
+                    <li>Tengo una fuerte habilidad para solucionar problemas utilizando herramientas de Marketing Digital.</li>
+                    <li>Tengo familiaridad con tecnologías como premiere after efect.</li>
+                    <li>Tengo conocimientos basicos en Hootsuite, HTML y CSS</li>
+                    <li>Puedo trabajar de manera independiente y en equipo para entregar proyectos a tiempo y con un alto nivel de calidad.</li>
+                    </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <button name="imprimir" value="Imprimir" onclick="window.print();">Imprimir CV</button>
+    </footer>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
